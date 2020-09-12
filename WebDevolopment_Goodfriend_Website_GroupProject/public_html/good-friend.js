@@ -1,3 +1,5 @@
+// Code written By Nawaf Alharbi
+
 var Check_Main = document.getElementsByClassName('check_main');
 var Check_Side = document.getElementsByClassName('check_side');
 var Check_Drink = document.getElementsByClassName('check_drink');
