@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <style>
+            .breakfast_p {width: 380px; height: 300px;}
+            #Breakfast_Plate, h2 {display: inline;}
+            #main_container, #side_container, #drink_container {display: inline-block;}
+        </style>
+        <title> Good Friend -Breakfast Menu- </title>
+    </head>
+    <body>
+        <h1 style="font-family: fantasy;"> "good-friend" Ordering System  </h1>
+        <h2 style="font-family: fantasy; text-align: center; padding-top: 15px;"> How can we help you with your breakfast order? </h2>
+        <br>
+        <div>
+            <article>
+                <h3> Our Breakfast menu </h3>
+                "It's time to redeem the midday meal: No more bland sandwiches, <br>
+                soggy salads, or boring soups here. These lunches are exciting, <br>
+                satisfying, and portable. Our definitive guide to a healthy lunch <br>
+                on the go.. complete with nutrition-boosting tips, make-ahead <br>
+                strategies, and tasty pack-and-go recipes, will have you rethinking <br>
+                your breakfast." <br>
+            </article>
+        </div>
+        
+        <div id="replace_me">
+        <div id="main_container">
+            <h1> Main Plates </h1>
+            <h2> Pancakes </h2>
+            <input type="radio" name="mbox" id="Pancakes" class="check_main" value= "7.5">
+            <h3> 4 Buttermilk Pancakes </h3>
+            <h4> 7.5$ </h4>
+            <b>Quantity:</b> <input id="quantity_main0" type="number" min="1" max="15" style=" width: 45px" value="1">
+            <input type="button" value="add to cart" onclick="Add_To_Main_Cart();" > <br>
+            <img style="padding-top:10px;" class="breakfast_p" src="images/Breakfast1.jpg" alt="#">
+            <br><br><br>
+
+            <h2> Omlette </h2>
+            <input type="radio" name="mbox" id="Omelette" class="check_main" value= "9.99">
+            <h3> Cheesy Mashrom Omlette  </h3>
+            <h4> 9.99$ </h4>
+            <b>Quantity:</b> <input id="quantity_main1" type="number" min="1" max="15" style=" width: 45px" value="1">
+            <input type="button" value="add to cart" onclick="Add_To_Main_Cart();"> <br>
+            <img style="padding-top: 10px;" class="breakfast_p" src="images/Breakfast2.jpg" alt="#"> <br>
+            <br><br><br>
+
+            <h2> Tuna Cesar Salad  </h2>
+            <input type="radio" name="mbox" id="TunaSalad" class="check_main" value= "5.99">
+            <h3> Tuna, Green Beans, Lettuce  </h3>
+            <h4> 5.99$ </h4>
+            <b>Quantity:</b> <input id="quantity_main2" type="number" min="1" max="15" style=" width: 45px" value="1">
+            <input type="button" value="add to cart" onclick="Add_To_Main_Cart();"> <br>
+            <img style="padding-top: 10px;" class="breakfast_p" src="images/Breakfast3.jpg" alt="#"> <br>
+            <br>
+            
+            <h3><a href="Custom_Order.html" target="_blank"> Custom Order  </a>
+                <input type="radio" name="mbox" id="Custom_Order" class="check_main" value= "10.99"> </h3>
+            <b>Quantity:</b> <input id="quantity_main3" type="number" min="1" max="15" style=" width: 45px" value="1">
+            <input type="button" value="add to cart" onclick="Add_To_Main_Cart();">
+        </div>
+
+        <div style="padding-left:25px;" id="side_container">
+            <h1> Side Dishes </h1>
+            <h2> Mash Potatoes </h2>
+            <input type="radio" name="sbox" id="MashPotatoes" class="check_side" value= "4.57">
+            <h3> Mashed potatoes made with milk </h3>
+            <h4> 4.57$ </h4>
+            <b>Quantity:</b> <input id="quantity_side0" type="number" min="1" max="15" style=" width: 45px" value="1">
+            <input type="button" value="add to cart" onclick="Add_To_Side_Cart();"> <br>
+            <img style="padding-top:10px;" class="breakfast_p" src="images/Side1.jpg" alt="#">
+            <br><br><br>
+
+            <h2> Steamed Veggies </h2>
+            <input type="radio" name="sbox" id="SteamedVeggies" class="check_side" value= "3.32">
+            <h3> plate info </h3>
+            <h4> 3.32$ </h4>
+            <b>Quantity:</b> <input id="quantity_side1" type="number" min="1" max="15" style=" width: 45px" value="1">
+            <input type="button" value="add to cart" onclick="Add_To_Side_Cart();"> <br>
+            <img style="padding-top: 10px;" class="breakfast_p" src="images/Side2.jpg" alt="#"> <br>
+            <br><br><br>
+
+            <h2> French Fries  </h2>
+            <input type="radio" name="sbox" id="FrenchFries" class="check_side" value= "3.88">
+            <h3> 20g of French fries </h3>
+            <h4> 3.88$ </h4>
+            <b>Quantity:</b> <input id="quantity_side2" type="number" min="1" max="15" style=" width: 45px" value="1">
+            <input type="button" value="add to cart" onclick="Add_To_Side_Cart();"> <br>
+            <img style="padding-top: 10px;" class="breakfast_p" src="images/Side3.jpg" alt="#"> <br>
+            <br>
+            <h3> No Side
+                <input type="radio" name="sbox" id="NoneS" class="check_side" value= "0"> </h3>
+            <b>Quantity:</b> <input id="quantity_side3" type="number" min="0" max="0" style=" width: 45px" value="0">
+            <input type="button" value="add to cart" onclick="Add_To_Side_Cart();">
+        </div>
+
+        <div id="drink_container">
+            <h1> Drinks </h1>
+            <h2> Soft Drink </h2>
+            <input type="radio" name="dbox" id="SoftDrink" class="check_drink" value= "2.45">
+            <h3> Pepsi </h3>
+            <h4> 2.45$ </h4>
+            <b>Quantity:</b> <input id="quantity_drink0" type="number" min="1" max="15" style=" width: 45px" value="1">
+            <input type="button" value="add to cart" onclick="Add_To_Drink_Cart();"> <br>
+            <img style="padding-top:10px;" class="breakfast_p" src="images/Drink1.jpg" alt="#">
+            <br><br><br>
+
+            <h2> Beer </h2>
+            <input type="radio" name="dbox" id="Beer" class="check_drink" value= "3.50">
+            <h3> Cold Beer </h3>
+            <h4> 3.50$ </h4>
+            <b>Quantity:</b> <input id="quantity_drink1" type="number" min="1" max="15" style=" width: 45px" value="1">
+            <input type="button" value="add to cart" onclick="Add_To_Drink_Cart();"> <br>
+            <img style="padding-top: 10px;" class="breakfast_p" src="images/Drink2.jpg" alt="#"> <br>
+            <br><br><br>
+
+            <h2> Coffee  </h2>
+            <input type="radio" name="dbox" id="Coffee" class="check_drink" value= "2">
+            <h3> Black Coffee </h3>
+            <h4> 2$ </h4>
+            <b>Quantity:</b> <input id="quantity_drink2" type="number" min="1" max="15" style=" width: 45px" value="1">
+            <input type="button" value="add to cart" onclick="Add_To_Drink_Cart();"> <br>
+            <img style="padding-top: 10px;" class="breakfast_p" src="images/Drink3.jpg" alt="#"> <br>
+            <br>
+            <h3> No Drink
+                <input type="radio" name="dbox" id="NoneD" class="check_drink" value= "0"> </h3>
+            <b>Quantity:</b> <input id="quantity_drink3" type="number" min="0" max="0" style=" width: 45px" value="0">
+            <input type="button" value="add to cart" onclick="Add_To_Drink_Cart();">
+        </div>
+            
+            </div>
+    
+
+    <input style="float: right;" type="button" onclick="Confirm();" value="checkout">
+    <script src="good-friend.js">
+
+    </script>
+</body>
+</html>
